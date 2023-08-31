@@ -9,15 +9,19 @@
         background-color: rgb(10 12 27);
         font-family: sans-serif;
         padding: 150px;
+        display: grid;
+        place-content: center;
       }
       main {
         display: flex;
         justify-content: center;
+        flex-direction: column-reverse;
       }
       .Parentdv {
         background-color: rgb(28 25 56);
         padding: 5%;
-        width: 350px;
+        /* width: 350px; */
+        text-align: center;
       }
       h1,
       h3 {
@@ -33,6 +37,7 @@
       }
       section {
         display: flex;
+        flex-direction: column-reverse;
         justify-content: space-between;
         line-height: 10px;
         text-transform: uppercase;
@@ -49,9 +54,50 @@
         background-image: url("https://img.freepik.com/free-photo/flat-lay-office-desk-assortment-with-empty-screen-tablet_23-2148707960.jpg?w=2000");
         background-color: rgba(128, 0, 128, 0.388);
         background-size: cover;
-        width: 420px;
+        height: 300px;
 
         background-blend-mode: multiply;
+      }
+      @media (min-width: 700px) {
+        body {
+          background-color: rgb(10 12 27);
+          font-family: sans-serif;
+          padding: 150px;
+        }
+        main {
+          display: flex;
+          justify-content: center;
+          flex-direction: column-reverse;
+        }
+        .Parentdv {
+          background-color: rgb(28 25 56);
+          padding: 5%;
+          width: 420px;
+        }
+        section {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          line-height: 10px;
+          text-transform: uppercase;
+        }
+
+        .color {
+          color: blueviolet;
+        }
+        p {
+          color: rgba(220, 216, 216, 0.753);
+          font-family: sans-serif;
+        }
+        .imgdv {
+          background-image: url("https://img.freepik.com/free-photo/flat-lay-office-desk-assortment-with-empty-screen-tablet_23-2148707960.jpg?w=2000");
+          background-color: rgba(128, 0, 128, 0.388);
+          background-size: cover;
+          width: 420px;
+          height: auto;
+
+          background-blend-mode: multiply;
+        }
       }
     </style>
   </head>
