@@ -1,26 +1,27 @@
 <!DOCTYPE html>
+<!-- saved from url=(0043)https://blackprojects.netlify.app/flex.html -->
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
       body {
         background-color: rgb(10 12 27);
         font-family: sans-serif;
-        padding: 150px;
-        display: grid;
-        place-content: center;
       }
       main {
         display: flex;
         justify-content: center;
         flex-direction: column-reverse;
       }
+      span {
+        color: rgb(155 84 200);
+      }
       .Parentdv {
         background-color: rgb(28 25 56);
         padding: 5%;
-        /* width: 350px; */
         text-align: center;
       }
       h1,
@@ -32,23 +33,14 @@
         line-height: 1.1;
       }
 
-      p {
+      h4 {
         color: rgb(106, 106, 123);
       }
       section {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         justify-content: space-between;
-        line-height: 10px;
-        text-transform: uppercase;
-      }
-
-      .color {
-        color: blueviolet;
-      }
-      p {
-        color: rgba(220, 216, 216, 0.753);
-        font-family: sans-serif;
+        align-items: center;
       }
       .imgdv {
         background-image: url("https://img.freepik.com/free-photo/flat-lay-office-desk-assortment-with-empty-screen-tablet_23-2148707960.jpg?w=2000");
@@ -58,36 +50,29 @@
 
         background-blend-mode: multiply;
       }
-      @media (min-width: 700px) {
+
+      @media (min-width: 770px) {
         body {
           background-color: rgb(10 12 27);
           font-family: sans-serif;
-          padding: 150px;
+          display: grid;
+          place-content: center;
         }
         main {
           display: flex;
           justify-content: center;
-          flex-direction: column-reverse;
+          flex-direction: row;
         }
         .Parentdv {
           background-color: rgb(28 25 56);
           padding: 5%;
-          width: 420px;
+          width: 350px;
+          text-align: left;
         }
         section {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          line-height: 10px;
-          text-transform: uppercase;
-        }
-
-        .color {
-          color: blueviolet;
-        }
-        p {
-          color: rgba(220, 216, 216, 0.753);
-          font-family: sans-serif;
         }
         .imgdv {
           background-image: url("https://img.freepik.com/free-photo/flat-lay-office-desk-assortment-with-empty-screen-tablet_23-2148707960.jpg?w=2000");
@@ -95,7 +80,6 @@
           background-size: cover;
           width: 420px;
           height: auto;
-
           background-blend-mode: multiply;
         }
       }
@@ -104,26 +88,23 @@
   <body>
     <main>
       <div class="Parentdv">
-        <h1>
-          Get <span class="color">insights</span> that help your business grow.
-        </h1>
+        <h1>Get <span>insights</span> that help your business grow</h1>
         <p>
           Discover the benefits of data analytics and make better decisions
-          regarding revenue,customer experience, and overall efficiency.
+          regarding revenue, customer experience, and overall efficiency.
         </p>
-
         <section>
           <div>
             <h3>10k+</h3>
-            <p>companies</p>
+            <h4>COMPANIES</h4>
           </div>
           <div>
             <h3>314</h3>
-            <p>templates</p>
+            <h4>TEMPLATES</h4>
           </div>
           <div>
             <h3>12M+</h3>
-            <p>queries</p>
+            <h4>QUERIES</h4>
           </div>
         </section>
       </div>
